@@ -1,0 +1,171 @@
+/* Basic styles for assignment */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #163a52;
+  background-image:
+    linear-gradient(rgba(225, 243, 255, 0.78), rgba(213, 237, 255, 0.85)),
+    url("BG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(188, 226, 255, 0.9);
+  color: #0f3652;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #5ca2d6;
+}
+
+nav {
+  background-color: rgba(174, 218, 252, 0.93);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #5ca2d6;
+}
+
+nav a {
+  color: #114264;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  background-color: #5ca2d6;
+  color: #f4fbff;
+  border-color: #8ec2e8;
+}
+
+nav a.active {
+  background-color: #3e89bf;
+  color: #f4fbff;
+  border-color: #8ec2e8;
+}
+
+.card {
+  background-color: rgba(240, 250, 255, 0.92);
+  width: 90%;
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 18px;
+  border: 1px solid #6eaedd;
+  box-shadow: 0 2px 8px rgba(44, 92, 130, 0.2);
+}
+
+.banner {
+  background-color: rgba(214, 238, 255, 0.95);
+  border: 1px solid #7bb7e2;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #103f60;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.course-card {
+  border: 1px solid #73b0dd;
+  padding: 12px;
+  background-color: rgba(224, 244, 255, 0.95);
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #3e89bf;
+  color: #f4fbff;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #8ec2e8;
+}
+
+.btn-link:hover {
+  background-color: #5ca2d6;
+}
+
+.detail-block {
+  border-top: 1px solid #6eaedd;
+  padding-top: 12px;
+  margin-top: 14px;
+}
+
+.auth-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.auth-toggle button {
+  background-color: #a7d3f1;
+  color: #114264;
+  border: 1px solid #73b0dd;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.auth-toggle button.active {
+  background-color: #3e89bf;
+  color: #f4fbff;
+}
+
+.auth-panel {
+  border-top: 1px solid #6eaedd;
+  padding-top: 12px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+input,
+textarea,
+button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #73b0dd;
+}
+
+input,
+textarea {
+  background-color: rgba(247, 253, 255, 0.95);
+  color: #163a52;
+}
+
+button {
+  background-color: #3e89bf;
+  color: #f4fbff;
+  border: none;
+}
+
+button:hover {
+  background-color: #5ca2d6;
+}
+
+.message {
+  font-size: 14px;
+  margin: 0;
+}
+
+footer {
+  background-color: rgba(174, 218, 252, 0.93);
+  color: #0f3652;
+  text-align: center;
+  padding: 12px;
+  border-top: 1px solid #5ca2d6;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learnhub
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="courses.xsd"
+>
+  <courses>
+    <course id="C101">
+      <title>Web Development Basics</title>
+      <instructor>Mr. Goutham</instructor>
+      <price currency="INR">1999</price>
+      <rating>4.3</rating>
+      <duration>8 Weeks</duration>
+    </course>
+
+    <course id="C102">
+      <title>AIML for Beginners</title>
+      <instructor>Mr. Manideep</instructor>
+      <price currency="INR">2499</price>
+      <rating>4.4</rating>
+      <duration>8 Weeks</duration>
+    </course>
+
+    <course id="C103">
+      <title>Database Fundamentals</title>
+      <instructor>Mr. Arun</instructor>
+      <price currency="INR">1799</price>
+      <rating>4.1</rating>
+      <duration>8 Weeks</duration>
+    </course>
+  </courses>
+</learnhub>
