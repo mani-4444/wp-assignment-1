@@ -1,11 +1,14 @@
 /* Basic styles for assignment */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #163a52;
-  background-image:
-    linear-gradient(rgba(225, 243, 255, 0.78), rgba(213, 237, 255, 0.85)),
-    url("BG.jpg");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  color: #e0e0f8;
+  background-image: linear-gradient(rgba(10, 10, 35, 0.85), rgba(20, 5, 40, 0.95)), url("BG.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,22 +16,22 @@ body {
 }
 
 header {
-  background-color: rgba(188, 226, 255, 0.9);
-  color: #0f3652;
+  background-color: rgba(15, 10, 45, 0.9);
+  color: #ffffff;
   text-align: center;
   padding: 20px;
-  border-bottom: 1px solid #5ca2d6;
+  border-bottom: 1px solid #3c1482;
 }
 
 nav {
-  background-color: rgba(174, 218, 252, 0.93);
+  background-color: rgba(20, 15, 55, 0.93);
   text-align: center;
   padding: 10px;
-  border-bottom: 1px solid #5ca2d6;
+  border-bottom: 1px solid #3c1482;
 }
 
 nav a {
-  color: #114264;
+  color: #e0e0f8;
   text-decoration: none;
   margin: 0 10px;
   padding: 6px 10px;
@@ -36,34 +39,36 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #5ca2d6;
-  color: #f4fbff;
-  border-color: #8ec2e8;
+  background-color: #4c1d95;
+  color: #ffffff;
+  border-color: #6d28d9;
 }
 
 nav a.active {
-  background-color: #3e89bf;
-  color: #f4fbff;
-  border-color: #8ec2e8;
+  background-color: #6d28d9;
+  color: #ffffff;
+  border-color: #7c3aed;
 }
 
 .card {
-  background-color: rgba(240, 250, 255, 0.92);
-  width: 90%;
-  max-width: 950px;
-  margin: 20px auto;
-  padding: 18px;
-  border: 1px solid #6eaedd;
-  box-shadow: 0 2px 8px rgba(44, 92, 130, 0.2);
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 40px 5%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .banner {
-  background-color: rgba(214, 238, 255, 0.95);
-  border: 1px solid #7bb7e2;
+  background-color: rgba(45, 20, 90, 0.8);
+  border: 1px solid #5b21b6;
   padding: 20px;
   text-align: center;
-  margin-bottom: 12px;
-  color: #103f60;
+  margin-bottom: 24px;
+  color: #ffffff;
 }
 
 img {
@@ -73,32 +78,41 @@ img {
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
 }
 
 .course-card {
-  border: 1px solid #73b0dd;
-  padding: 12px;
-  background-color: rgba(224, 244, 255, 0.95);
+  border: 1px solid #4c1d95;
+  padding: 18px;
+  background-color: rgba(25, 15, 60, 0.85);
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .btn-link {
   display: inline-block;
-  margin-top: 8px;
-  background-color: #3e89bf;
-  color: #f4fbff;
+  margin-top: auto;
+  background-color: #6d28d9;
+  color: #ffffff;
   text-decoration: none;
   padding: 8px 10px;
-  border: 1px solid #8ec2e8;
+  border: 1px solid #7c3aed;
+  text-align: center;
 }
 
 .btn-link:hover {
-  background-color: #5ca2d6;
+  background-color: #7c3aed;
 }
 
 .detail-block {
-  border-top: 1px solid #6eaedd;
+  border-top: 1px solid #4c1d95;
   padding-top: 12px;
   margin-top: 14px;
 }
@@ -110,20 +124,20 @@ img {
 }
 
 .auth-toggle button {
-  background-color: #a7d3f1;
-  color: #114264;
-  border: 1px solid #73b0dd;
+  background-color: rgba(30, 20, 70, 0.8);
+  color: #e0e0f8;
+  border: 1px solid #4c1d95;
   padding: 8px 12px;
   cursor: pointer;
 }
 
 .auth-toggle button.active {
-  background-color: #3e89bf;
-  color: #f4fbff;
+  background-color: #6d28d9;
+  color: #ffffff;
 }
 
 .auth-panel {
-  border-top: 1px solid #6eaedd;
+  border-top: 1px solid #4c1d95;
   padding-top: 12px;
 }
 
@@ -138,23 +152,24 @@ textarea,
 button {
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #73b0dd;
+  border: 1px solid #4c1d95;
 }
 
 input,
 textarea {
-  background-color: rgba(247, 253, 255, 0.95);
-  color: #163a52;
+  background-color: rgba(15, 10, 45, 0.95);
+  color: #e0e0f8;
 }
 
 button {
-  background-color: #3e89bf;
-  color: #f4fbff;
+  background-color: #6d28d9;
+  color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #5ca2d6;
+  background-color: #7c3aed;
 }
 
 .message {
@@ -163,9 +178,10 @@ button:hover {
 }
 
 footer {
-  background-color: rgba(174, 218, 252, 0.93);
-  color: #0f3652;
+  background-color: rgba(15, 10, 45, 0.93);
+  color: #ffffff;
   text-align: center;
   padding: 12px;
-  border-top: 1px solid #5ca2d6;
+  border-top: 1px solid #3c1482;
+  margin-top: auto;
 }
